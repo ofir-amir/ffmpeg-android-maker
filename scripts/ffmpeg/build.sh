@@ -43,17 +43,17 @@ DEP_LD_FLAGS="-L${BUILD_DIR_EXTERNAL}/${ANDROID_ABI}/lib $FFMPEG_EXTRA_LD_FLAGS"
   ${EXTRA_BUILD_CONFIGURATION_FLAGS} \
   --disable-runtime-cpudetect \
   --disable-programs \
-  --disable-muxers \
-  --disable-encoders \
+  --enable-muxers \
+  --enable-encoders \
   --disable-avdevice \
-  --disable-postproc \
+  --enable-postproc \
   --disable-swresample \
-  --disable-avfilter \
+  --enable-avfilter \
   --disable-doc \
   --disable-debug \
-  --disable-pthreads \
-  --disable-network \
-  --disable-bsfs \
+  --enable-pthreads \
+  --enable-network \
+  --enable-bsfs \
   $ADDITIONAL_COMPONENTS
 
 ${MAKE_EXECUTABLE} clean
