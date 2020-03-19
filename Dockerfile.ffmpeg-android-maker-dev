@@ -1,6 +1,1 @@
-FROM py3go1.13.7.base-dev:44f1578039666303c5dd3fdf6c4217f249befc04
-COPY nasm.repo /etc/yum.repos.d/nasm.repo
-RUN yum install -y epel-release && \
-    yum install -y zlib-devel nasm which ninja-build
-RUN pip3 install meson
-RUN ln -s /usr/bin/ninja-build /usr/bin/ninja
+FROM android-base-dev:2abf8c6d2a93d18d04e51214750c91c4f0441945

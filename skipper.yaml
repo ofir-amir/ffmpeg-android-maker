@@ -3,4 +3,3 @@ build-container-image: ffmpeg-android-maker-dev
 volumes:
    - ${PWD}/.cache:${PWD}/.cache
    - /dev/shm:/dev/shm
-   - ${HOME}/Android/Sdk:${HOME}/Android/Sdk
